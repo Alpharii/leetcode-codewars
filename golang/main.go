@@ -6,16 +6,11 @@ import (
 )
 
 func main(){
-	fmt.Println(problem.WhoIsServing(1))
-	fmt.Println(problem.WhoIsServing(2))
-	fmt.Println(problem.WhoIsServing(3))
-	fmt.Println(problem.WhoIsServing(4))
-	fmt.Println(problem.WhoIsServing(5))
-	fmt.Println(problem.WhoIsServing(6))
-	fmt.Println(problem.WhoIsServing(7))
-	fmt.Println(problem.WhoIsServing(8))
-	fmt.Println(problem.WhoIsServing(9))
-	fmt.Println(problem.WhoIsServing(10))
-	fmt.Println(problem.WhoIsServing(11))
-	fmt.Println(problem.WhoIsServing(12))
+	fmt.Println(problem.Rps("rock", "scissors"))
+	fmt.Println(problem.Rps("papper", "rock"))
+	fmt.Println(problem.Rps("scissors", "papper"))
+	fmt.Println(problem.Rps("rock", "papper"))
+	fmt.Println(problem.Rps("papper", "scissors"))
+	fmt.Println(problem.Rps("scissors", "rock"))
+	fmt.Println(problem.Rps("rock", "rock"))
 }
