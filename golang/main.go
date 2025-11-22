@@ -6,11 +6,6 @@ import (
 )
 
 func main(){
-	fmt.Println(problem.Rps("rock", "scissors"))
-	fmt.Println(problem.Rps("papper", "rock"))
-	fmt.Println(problem.Rps("scissors", "papper"))
-	fmt.Println(problem.Rps("rock", "papper"))
-	fmt.Println(problem.Rps("papper", "scissors"))
-	fmt.Println(problem.Rps("scissors", "rock"))
-	fmt.Println(problem.Rps("rock", "rock"))
+	// fmt.Println(problem.BubblesortOnce([]int{9,7,5,3,1,2,4,6,8}), []int{7, 5, 3, 1, 2, 4, 6, 8, 9})
+	fmt.Println(problem.BubblesortOnce([]int{2,4,1}), []int{2,1,4})
 }
