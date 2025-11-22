@@ -6,6 +6,7 @@ import (
 )
 
 func main(){
-	// fmt.Println(problem.BubblesortOnce([]int{9,7,5,3,1,2,4,6,8}), []int{7, 5, 3, 1, 2, 4, 6, 8, 9})
-	fmt.Println(problem.BubblesortOnce([]int{2,4,1}), []int{2,1,4})
+	fmt.Println(problem.RomanToInt("III"))
+	fmt.Println(problem.RomanToInt("LVIII"))
+	fmt.Println(problem.RomanToInt("MCMXCIV"))//1994
 }
