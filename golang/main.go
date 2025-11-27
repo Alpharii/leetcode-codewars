@@ -6,7 +6,7 @@ import (
 )
 
 func main(){
-	fmt.Println(problem.LongestCommonPrefix([]string{"flower","flow","flight"}))
-	fmt.Println(problem.LongestCommonPrefix([]string{"dog","racecar","car"}))
-	fmt.Println(problem.LongestCommonPrefix([]string{"cir","car"}))
+	fmt.Println(problem.FirstUniqChar("leetcode"))
+	fmt.Println(problem.FirstUniqChar("loveleetcode"))
+	fmt.Println(problem.FirstUniqChar("aabb"))
 }
