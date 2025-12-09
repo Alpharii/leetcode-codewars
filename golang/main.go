@@ -6,7 +6,7 @@ import (
 )
 
 func main(){
-	fmt.Println(problem.FirstUniqChar("leetcode"))
-	fmt.Println(problem.FirstUniqChar("loveleetcode"))
-	fmt.Println(problem.FirstUniqChar("aabb"))
+	fmt.Println(problem.HighAndLow("1 2 3 4 5")) // "5 1"
+	fmt.Println(problem.HighAndLow("1 2 -3 4 5")) // "5 -3"
+	fmt.Println(problem.HighAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4")) // "9 -5"
 }
