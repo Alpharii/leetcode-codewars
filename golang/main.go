@@ -6,7 +6,6 @@ import (
 )
 
 func main(){
-	fmt.Println(problem.HighAndLow("1 2 3 4 5")) // "5 1"
-	fmt.Println(problem.HighAndLow("1 2 -3 4 5")) // "5 -3"
-	fmt.Println(problem.HighAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4")) // "9 -5"
+	// fmt.Println(problem.AreaOfMaxDiagonal([][]int {{1,10},{3,10},{4,4},{2,6},{6,3},{6,4},{9,1},{6,1},{2,3}}))
+	fmt.Println(problem.AreaOfMaxDiagonal([][]int {{2,6},{5,1},{3,10},{8,4}}))
 }
