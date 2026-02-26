@@ -6,6 +6,10 @@ import (
 )
 
 func main(){
-	// fmt.Println(problem.AreaOfMaxDiagonal([][]int {{1,10},{3,10},{4,4},{2,6},{6,3},{6,4},{9,1},{6,1},{2,3}}))
-	fmt.Println(problem.AreaOfMaxDiagonal([][]int {{2,6},{5,1},{3,10},{8,4}}))
+	fmt.Println(problem.PingPong("ping-pong-ping-pong-bonk-bing-doof"))
+	fmt.Println(problem.PingPong("pong-ping-dong-ping-pong-tink-bonk-pong-ping-doof"))
+	fmt.Println(problem.PingPong("pong-ping-bink-ping-pong-donk"))
+	fmt.Println(problem.PingPong("ping-pong-ping-pong-ping-pong-ping-zoom-bang-ping-pong-ping-pong-ping-pong-ping-voom-bash-voom-ping-pong-ping-pong-ping-pong-ping-pong-ping-pong-foom"))
+	// fmt.Println(problem.PingPong(""))
+	// fmt.Println(problem.PingPong(""))
 }
