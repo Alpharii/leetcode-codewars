@@ -1,7 +1,7 @@
 const input = [2, 11, 15, 7]
 const target = 9
 
-function twoSum(nums: number[], target: number): number[] {
+function twoSum1(nums: number[], target: number): number[] {
     const numsMap = new Map<number, number>()
     for(let i = 0; i< nums.length; i++){
         const goals = target - nums[i]
