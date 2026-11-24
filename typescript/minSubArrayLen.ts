@@ -23,34 +23,29 @@
 
 function minSubArrayLen(target: number, nums: number[]): number {
     let minWindowSize = Infinity
-    let window = 0
-    let tempVal = 0
+    let windowSum = 0
+    let left = 0
 
-    for (let i = 0; i < nums.length; i++) {
-        console.log('window',window, tempVal, nums[i])
-        if(tempVal < target){
-            tempVal += nums[i]
-            window++
-            console.log('temp +=',tempVal)
-
-        }
-        console.log('condition',nums[i-window])
-        while(tempVal + nums[i-window] >= target){
-            window--
-            tempVal -= nums[i-window]
-            console.log('temp-=',tempVal, nums[i-window])
-            console.log('window after minus',window)
-            if(minWindowSize >= window){
-                minWindowSize = window
+    for(let right = 0; right<nums.length; right++){
+        windowSum += nums[right]
+        while(windowSum >= target){
+            if(minWindowSize > right - left + 1){
+                minWindowSize = right - left + 1
             }
+            windowSum -= nums[left]
+            left++
         }
     }
+
     if(minWindowSize === Infinity) return 0
     return minWindowSize
 };
 
+// console.log(minSubArrayLen(15, [1,2,3,4,5]))
 // console.log(minSubArrayLen(7, [2,3,1,2,4,3]))
-console.log(minSubArrayLen(4, [1,4,4]))
+// console.log(minSubArrayLen(4, [1,4,4]))
+console.log(minSubArrayLen(6, [10,2,3]))
+// console.log(minSubArrayLen(11, [1,1,1,1,1,1,1,1]))
 
 
 //gagal
